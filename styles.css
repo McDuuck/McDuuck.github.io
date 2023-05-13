@@ -1,0 +1,610 @@
+#social-media-icons {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+#social-media-icons a {
+    color: rgb(221, 139, 33);
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+#social-media-icons a:hover {
+    color: rgb(177, 28, 152);
+}
+header {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    transition: background-image 0.5s ease;
+  }
+  
+body {
+    margin: 0px;
+    background-color: rgb(184, 115, 26);
+    padding: 0px;
+}
+
+.banneri-item {
+    width: 400px;
+    left: 100px;
+    top: 50px;
+    color: rgb(252, 240, 222);
+    cursor: pointer;
+    display: block;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    position: relative;
+}
+
+.banneri-item a {
+  text-decoration: none;
+  color: rgb(252, 240, 222)
+}
+
+.menu-item {
+    color: rgb(252, 240, 222);
+    cursor: pointer;
+    display: block;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    padding: clamp(0.25, 0.5vw, 1rem) 0rem;
+    text-decoration: none;
+    transition: opacity 400ms ease;
+    background: hsla(0, 0%, 100%, 0)
+  }
+  
+.banneri-item:hover > .menu-item {
+    opacity: 0.3;
+}
+
+.banneri-item:hover > .menu-item:hover {
+    opacity: 1; 
+}
+
+
+
+h1 {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1.5em;
+    color: white;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    position: absolute;
+  }
+  
+  h1:hover {
+    color: rgb(255, 246, 238);
+  }
+
+  .koodi_testi h1{
+    color: rgb(214, 132, 24);
+    right: 0px;
+    top: 500px;
+  }
+
+
+  .grid-container {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    gap: 2px;
+    background-color: #474747;
+    padding: 0px;
+  }
+  
+  .grid-container > div {
+    font-family: 'Ibarra Real Nova', serif;
+    color: rgb(184, 115, 26);
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 3em;
+  }
+  
+  .grid-container > div:first-child {
+    font-size: 3em;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 80px;
+  }
+  
+  #left-arrow, #right-arrow {
+    cursor: pointer;
+  }
+  #left-arrow:hover {
+    color: rgb(255, 255, 255);
+  }
+  #right-arrow:hover {
+    color: rgb(255, 255, 255);
+  } 
+
+  .toka_nelio {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    gap: 2px;
+    background-color: #353535;
+    padding: 2px;
+  }
+
+  
+.toka_nelio > div {
+  font-family: 'Ibarra Real Nova', serif;
+  color: aliceblue;
+  background-color: rgb(14, 14, 14);
+  text-align: center;
+  padding: 50px 0;
+  font-size: 3em;
+  }
+
+
+  .toka_nelio > div:first-child {
+    background-image: url("https://images.unsplash.com/photo-1674806706838-94ee66a78f7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+  }
+  .toka_nelio > div:nth-child(2) {
+    background-image: url("https://images.unsplash.com/photo-1583917351852-74880cf88c58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0OHx0b3dKWkZza3BHZ3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=2000&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+  }
+
+.toka_nelio > div:nth-child(3) {
+  background-color: rgb(14, 14, 14);
+  font-size: 3em;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  padding: 80px;
+  }
+
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 0px;
+    border: 0px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: transparent;
+  }
+      
+  #myBtn:hover {
+  color: rgb(138, 0, 85);
+  }
+
+  .slide-transition {
+    transition: background-image 1s ease-in-out;
+  }
+
+
+
+  .avatari {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+  
+  .keskusta {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 90%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .keskusta_toka {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  
+  }
+  .toka_nelio div:first-child:hover .avatari {
+    opacity: 0.3;
+  }
+  
+  .toka_nelio div:first-child:hover .keskusta {
+    opacity: 1;
+  }
+  
+  .toka_nelio > div:nth-child(2):hover .avatari {
+    opacity: 0.3;
+  }
+
+  .toka_nelio > div:nth-child(2):hover .keskusta_toka {
+    opacity: 1;
+  }
+
+.keski_alue {
+    text-align: center;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 3em;
+    color: rgb(14, 14, 14);
+    text-align: center;
+}
+
+.keski_alue h1 {
+    width: 100%;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 3em;
+    color: rgb(14, 14, 14);
+    text-align: center;
+    
+    }
+
+
+.keski_alue_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    padding: 10px;
+    }
+      
+.keski_alue_grid > div {  
+    text-align: center;
+    padding: 20px 0;
+    }
+      
+.esine1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 80px;
+    }
+
+
+      .side {
+        display: grid;
+        height: 40vh;
+        overflow: hidden;
+        place-items: center;
+        position: absolute;
+        width: 100%;
+      }
+      
+      .side .title {
+        font-family: 'Ibarra Real Nova', serif;
+        font-size: 5vw;
+        margin: 0px 10vw;
+        width: 80vw;
+        text-align: center;
+      }
+      
+      #left-side {
+        background-color: rgb(14, 14, 14);
+        width: 60%;
+        z-index: 2;
+
+      }
+      
+      #left-side .title {  
+        color: white;
+      }
+      
+      #left-side .fancy {
+        color: rgb(184, 115, 26);
+      }
+      
+      #right-side {
+        background-color: rgb(184, 115, 26);
+
+      }
+      
+      #right-side .title {
+        color: rgb(14, 14, 14);
+        
+      }
+      
+      #right-side .fancy {
+        color: white;
+      }
+
+.teksti_gridi {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0px;
+  margin: 0px;
+  height: 40vh; 
+}
+
+
+.portfolio_alue {
+    
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1em;
+    color: rgb(184, 115, 26);
+    text-align: center;
+}
+
+.portfolio_grid {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  
+  }
+
+.portfolio_item {
+  border: solid 1px #353535;
+  text-align: end;
+  padding-right: 30px;
+  font-size: 1em;
+  
+}
+.ekat {
+
+  padding: 0px;
+  border-width: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.formit {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+#fs-frm label {
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+#fs-frm input,
+#fs-frm textarea {
+  display: inline-block;
+  width: calc(100% - 130px);
+  height: 25px;
+  vertical-align: top;
+}
+#fs-frm fieldset {
+  border: none;
+}
+#fs-frm input[type="submit"] {
+  width: 100px; 
+}
+
+.footteri {
+  width: 100%;
+  background-color: rgb(14, 14, 14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footteri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+
+#footteri a {
+  color: rgb(221, 139, 33);
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+#footteri a:hover {
+  color: rgb(177, 28, 152);
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .grid-container {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display:block;
+    gap: 2px;
+    background-color: #474747;
+    padding: 0px;
+  }
+  .grid-container > div:first-child {
+    font-size: 3em;
+    display: block;
+    text-align: center;
+    padding-left: 0px;  
+  }
+
+  .grid-container > div {
+    padding: 25px;
+  }  
+  .text {
+    padding: 0px;
+    margin: 0px;
+  }
+  .koodi_testi h1{
+    color: rgb(214, 132, 24);
+    right: 0px;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+  }
+
+
+
+  header {
+    display: block;
+    float: none;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  .banneri-item {
+    width: 100%;
+    left: 0px;
+    top: 100px;
+    color: rgb(252, 240, 222);
+    cursor: pointer;
+    display: block;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: clamp(1.5rem, 4vw, 4rem);
+    position: relative;
+    
+  }
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+  .banneri-item a {
+    text-decoration: none;
+    color: rgb(252, 240, 222)
+  }
+
+  .menu-item {
+      color: rgb(252, 240, 222);
+      cursor: pointer;
+      display: block;
+      font-family: 'Ibarra Real Nova', serif;
+      font-size: clamp(1.5rem, 4vw, 4rem);
+      text-decoration: none;
+      transition: opacity 400ms ease;
+      background: hsla(0, 0%, 100%, 0);
+      padding: 10px;
+      
+    }
+    #social-media-icons {
+      display: block;
+      position: absolute;
+      top: 20px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+  }
+  
+  #social-media-icons a {
+      color: rgb(221, 139, 33);
+      margin-left: 20px;
+      text-decoration: none;
+  }
+  
+  #social-media-icons a:hover {
+      color: rgb(177, 28, 152);
+  }
+  .keski_alue {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 3em;
+    color: rgb(14, 14, 14);
+    width: 100%;
+    
+}
+
+  .keski_alue h1 {
+      width: 100%;
+      font-family: 'Ibarra Real Nova', serif;
+      font-size: 3em;
+      color: rgb(14, 14, 14);
+      text-align: center;
+      
+      }
+
+
+  .keski_alue_grid {
+      display: grid;
+      gap: 0px;
+      padding: 0px;
+      text-align: start;
+      }
+        
+  .keski_alue_grid > div {  
+      text-align: center;
+      padding: 0px 0;
+      }
+        
+  .esine1 {
+      display: block;
+      width: 100%;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      font-size: 50px;
+      }
+  .toka_nelio {
+        font-size: 7px;
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2px;
+        background-color: #353535;
+        padding: 2px;
+      }
+  .formit {
+    font-size: 15px;
+  }
+
+  .toka_nelio .avatari {
+    display: none;
+  }
+
+  .formit {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #fs-frm label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  #fs-frm input,
+  #fs-frm textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  #fs-frm input[type="submit"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+
+}
